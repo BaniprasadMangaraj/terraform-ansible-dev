@@ -90,8 +90,6 @@ ansible --version
 ### **🔹 Step 1: Terraform for EC2 Provisioning**  
 We’ll deploy **4 instances** (1 Ansible Master + 3 Managed Nodes). 
 
----
-![image](https://github.com/user-attachments/assets/c2929828-d44b-488a-8573-417d5b913fe3)
 
 ---
 
@@ -122,7 +120,7 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
-
+![image](https://github.com/user-attachments/assets/c2929828-d44b-488a-8573-417d5b913fe3)
 ---
 
 ## **📥 Ansible Installation & Configuration**  
