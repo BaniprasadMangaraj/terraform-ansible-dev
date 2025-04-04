@@ -88,7 +88,13 @@ ansible --version
 
 ## **🛠 Lab Setup: Terraform + AWS EC2**  
 ### **🔹 Step 1: Terraform for EC2 Provisioning**  
-We’ll deploy **4 instances** (1 Ansible Master + 3 Managed Nodes).  
+We’ll deploy **4 instances** (1 Ansible Master + 3 Managed Nodes). 
+
+---
+![image](https://github.com/user-attachments/assets/c2929828-d44b-488a-8573-417d5b913fe3)
+
+---
+
 
 #### **`main.tf`**  
 ```hcl
@@ -134,6 +140,7 @@ ansible [core 2.12.x]
   config file = /etc/ansible/ansible.cfg
   python version = 3.8.10
 ```
+![image](https://github.com/user-attachments/assets/909d618c-6561-4db1-8a38-efae9d6f0101)
 
 ---
 
@@ -157,6 +164,7 @@ ansible_user=ubuntu
 ansible_python_interpreter=/usr/bin/python3
 ansible_ssh_private_key_file=/home/ubuntu/keys/terra-key-ansible.pem
 ```
+![image](https://github.com/user-attachments/assets/a7846d77-57d3-4ea7-a19f-66819e57315e)
 
 ---
 
@@ -175,6 +183,8 @@ all:
         web2: { ansible_host: 10.0.1.11 }
         web3: { ansible_host: 10.0.1.12 }
 ```
+![image](https://github.com/user-attachments/assets/cdccc887-5d48-4c7a-859e-27556325a950)
+
 
 ### **🔹 Test Connectivity**  
 ```bash
